@@ -28,13 +28,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    outline: 1px solid blue;
     width: 100%;
     gap: 8px;
 }
 
 .logo{
-    outline: 1px solid black;
     width: 200px;
 }
 
@@ -66,7 +64,7 @@ label{
     margin-top: 10px;
 }
 
-input, select{
+input, select, .create_account{
     width: 100%;
     height: 40px;
     padding: 10px;
@@ -76,9 +74,43 @@ input, select{
     background-color: white;
 }
 
+select{
+    cursor: pointer;
+}
+
+.create_account{
+    border: none;
+    background-color: var(--nad-primary);
+    margin-top: 22px;
+    margin-bottom: 25px;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out
+}
+
+.create_account:hover{
+    background-color: var(--nad-secondary);
+}
+
 .password_strength{
     font-weight: lighter;
     font-style: italic;
     font-size: 14;
     color: darkslategray;
 }
+
+.info_icon{
+    width: 20px;
+    height: 20px;
+    stroke: var(--nad-primary);
+    margin-block: -5px;
+}
+
+.co_op_label{
+    cursor: pointer;
+}
+

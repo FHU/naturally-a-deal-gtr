@@ -169,7 +169,24 @@
                         <input type="password" id="password_confirm" name="password_confirm"
                             placeholder="Retype your password" required autocomplete="new-password">
 
-                        <label for="fullname">Select A Co-op</label>
+                        <label for="fullname" class="co_op_label">Select A Co-op
+                            <svg class="info_icon" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_429_11160)">
+                                    <circle cx="12" cy="11.9999" r="9"  stroke-width="2.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <rect x="12" y="8" width="0.01" height="0.01"  stroke-width="3.75"
+                                        stroke-linejoin="round" />
+                                    <path d="M12 12V16"  stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_429_11160">
+                                        <rect width="24" height="24" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </label>
                         <select name="co_op" id="co_op" required>
                             <option value="116">(A-01) GA - Perry </option>
                             <option value="58">(A-02) AL - Dothan</option>
@@ -237,6 +254,7 @@
                             <option value="108">(VB-04) TN - Powell</option>
                             <option value="220">(Z-13) NC - Deep Gap</option>
                         </select>
+                        <button type="submit" class="create_account"><h3>Create Account</h3></button>
                     </form>
                 </div>
             </section>
