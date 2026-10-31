@@ -153,31 +153,30 @@
                         <label for="fullname">First and Last Name</label>
                         <input type="text" id="fullname" name="fullname" placeholder="Robert Smith" required>
 
-                        <label for="fullname">Email Address</label>
+                        <label for="email">Email Address</label>
                         <input type="email" id="email" name="email" placeholder="example@domain.com" required>
 
-                        <label for="fullname">Phone Number</label>
+                        <label for="phone">Phone Number</label>
                         <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
 
-                        <label for="fullname">Create Password</label>
+                        <label for="password">Create Password</label>
                         <input type="password" id="password" name="password" placeholder="Create your password" required
                             autocomplete="new-password">
                         <p class="password_strength">Must have at least 8 characters, including 1 uppercase letter and 1
                             number</p>
 
-                        <label for="fullname">Confirm Password</label>
+                        <label for="psswd_confirm">Confirm Password</label>
                         <input type="password" id="password_confirm" name="password_confirm"
                             placeholder="Retype your password" required autocomplete="new-password">
 
-                        <label for="fullname" class="co_op_label">Select A Co-op
-                            <svg class="info_icon" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                        <label id="trigger_coop_info_card" for="coop" class="co_op_label" title="What is a Co-op?">Select A Co-op
+                            <svg class="info_icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_429_11160)">
-                                    <circle cx="12" cy="11.9999" r="9"  stroke-width="2.5"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <rect x="12" y="8" width="0.01" height="0.01"  stroke-width="3.75"
+                                    <circle cx="12" cy="11.9999" r="9" stroke-width="2.5" stroke-linecap="round"
                                         stroke-linejoin="round" />
-                                    <path d="M12 12V16"  stroke-width="2.5" stroke-linecap="round"
+                                    <rect x="12" y="8" width="0.01" height="0.01" stroke-width="3.75"
+                                        stroke-linejoin="round" />
+                                    <path d="M12 12V16" stroke-width="2.5" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </g>
                                 <defs>
@@ -254,8 +253,30 @@
                             <option value="108">(VB-04) TN - Powell</option>
                             <option value="220">(Z-13) NC - Deep Gap</option>
                         </select>
-                        <button type="submit" class="create_account"><h3>Create Account</h3></button>
+                        <button type="submit" class="create_account">
+                            <h3>Create Account</h3>
+                        </button>
                     </form>
+                </div>
+            </section>
+            <section id="coop_card" class="coop_explain">
+                <div class="coop_explain_card">
+                    <div class="coop_explain_card_top">
+                        <svg id="coop_card_close" class="coop_explain_x" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30"
+                            height="30" viewBox="0 0 48 48">
+                            <path
+                                d="M 38.982422 6.9707031 A 2.0002 2.0002 0 0 0 37.585938 7.5859375 L 24 21.171875 L 10.414062 7.5859375 A 2.0002 2.0002 0 0 0 8.9785156 6.9804688 A 2.0002 2.0002 0 0 0 7.5859375 10.414062 L 21.171875 24 L 7.5859375 37.585938 A 2.0002 2.0002 0 1 0 10.414062 40.414062 L 24 26.828125 L 37.585938 40.414062 A 2.0002 2.0002 0 1 0 40.414062 37.585938 L 26.828125 24 L 40.414062 10.414062 A 2.0002 2.0002 0 0 0 38.982422 6.9707031 z">
+                            </path>
+                        </svg>
+                        <h2>What is a Co-op?</h2>
+                    </div>
+                    <p>
+                        Placing an order with Naturally A Deal doesn't work like other vendors; we do not do delivery.
+                        Instead, we deliver to specific partner locations, called Co-ops, where you also go to pick up
+                        your
+                        order. For more information on how you get your order, <a class="coop_explain_link"
+                            href="https://naturallyadeal.com/how-it-works/">click here</a>.
+                    </p>
                 </div>
             </section>
         </main>
@@ -264,6 +285,7 @@
 
     </div>
     <script src="scripts.js"></script>
+    <script src="assets/js/signup.js"></script>
 </body>
 
 </html>
