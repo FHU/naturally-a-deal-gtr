@@ -15,6 +15,7 @@ body{
     margin: auto;
     border-radius: 20px;
     margin-top: 125px;
+    margin-bottom: 50px;
     filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
 
     display: flex;
@@ -154,6 +155,17 @@ select{
 .coop_explain_x{
     fill: var(--nad-primary);
     cursor: pointer;
+}
+
+#co_op{
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='none' stroke='%23333333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m6 9 6 6 6-6'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 20px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 @media(max-width:1000px){
