@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naturally A Deal | Sign Up</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/signup.css">
     <link rel="icon" href="images/Naturally-a-Deal-logo-white-truck-150x150.png" sizes="32x32">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="page">
 
@@ -124,8 +128,142 @@
 
         <div id="overlay"></div>
 
-        <main class="wrapper">
+        <main>
+            <section class="signup">
+                <div class="internal_content">
+                    <img src="images\Naturally-a-Deal-logo-color.png" alt="Naturally a Deal logo" class="logo">
+                    <h1>Create Your Account</h1>
+                    <h2>Already have an account? <a href="">Sign In</a></h2>
+                    <form action="">
+                        <label for="fullname">First and Last Name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Robert Smith" required>
 
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+
+                        <label for="password">Create Password</label>
+                        <input type="password" id="password" name="password" placeholder="Create your password" required
+                            autocomplete="new-password">
+                        <p class="password_strength">Must have at least 8 characters, including 1 uppercase letter and 1
+                            number</p>
+
+                        <label for="psswd_confirm">Confirm Password</label>
+                        <input type="password" id="password_confirm" name="password_confirm"
+                            placeholder="Retype your password" required autocomplete="new-password">
+
+                        <label id="trigger_coop_info_card" for="coop" class="co_op_label" title="What is a Co-op?">Select A Co-op
+                            <svg class="info_icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_429_11160)">
+                                    <circle cx="12" cy="11.9999" r="9" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <rect x="12" y="8" width="0.01" height="0.01" stroke-width="3.75"
+                                        stroke-linejoin="round" />
+                                    <path d="M12 12V16" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_429_11160">
+                                        <rect width="24" height="24" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </label>
+                        <select name="co_op" id="co_op" required>
+                            <option value="116">(A-01) GA - Perry </option>
+                            <option value="58">(A-02) AL - Dothan</option>
+                            <option value="65">(A-03) AL - Opp</option>
+                            <option value="23">(A-04) AL - Prattville</option>
+                            <option value="9">(A-05) AL - Sterrett</option>
+                            <option value="83">(A-06) AL - Tuscaloosa </option>
+                            <option value="8">(A-07) AL - Madison</option>
+                            <option value="107">(A-08) TN - Petersburg</option>
+                            <option value="102">(A-09) TN - Morrison</option>
+                            <option value="61">(A-10) TN - Murfreesboro</option>
+                            <option value="5">(A-11) TN - Spring Hill</option>
+                            <option value="20">(A-12) TN - Columbia</option>
+                            <option value="7">(A-13) TN - Summertown</option>
+                            <option value="48">(AB-01) TN - Oak Ridge</option>
+                            <option value="35">(AB-02) TN - Maryville</option>
+                            <option value="10">(AB-03) TN - Athens</option>
+                            <option value="18">(AB-04) TN - Dayton</option>
+                            <option value="51">(AB-05) TN - Cleveland</option>
+                            <option value="81">(C-01) SC - Simpsonville</option>
+                            <option value="27">(C-02) SC - Duncan</option>
+                            <option value="29">(C-03) SC - Lake Wylie</option>
+                            <option value="47">(C-04) NC - Albemarle</option>
+                            <option value="98">(C-05) NC - Salisbury</option>
+                            <option value="59">(C-06) NC - Youngsville</option>
+                            <option value="2">(C-07) NC - Wake Forest</option>
+                            <option value="1">(C-08) NC - Apex</option>
+                            <option value="85">(C-09) NC - Fuquay-Varina</option>
+                            <option value="22">(C-10) NC - Clayton</option>
+                            <option value="86">(C-11) NC - Beulaville</option>
+                            <option value="115">(C-12) NC - Washington</option>
+                            <option value="97">(C-13) NC - Pantego</option>
+                            <option value="3">(C-14) TN - Knoxville</option>
+                            <option value="13">(N) MI - Muskegon</option>
+                            <option value="64">(N) NE - Omaha</option>
+                            <option value="57">(T-01) TN - Rockwood</option>
+                            <option value="4">(T-02) TN - Crossville</option>
+                            <option value="16">(T-03) TN - Monterey</option>
+                            <option value="11">(T-04) TN - Cookeville</option>
+                            <option value="92">(T-05) TN - Lebanon </option>
+                            <option value="75">(T-06) TN - Portland</option>
+                            <option value="73">(T-07) TN - Pleasant View</option>
+                            <option value="100">(T-08) TN - Clarksville</option>
+                            <option value="49">(T-09) TN - Dickson</option>
+                            <option value="53">(T-10) TN - Centerville: TRex </option>
+                            <option value="6">(T-11) TN - Centerville: Brushy </option>
+                            <option value="37">(T-12) TN - Lobelville</option>
+                            <option value="113">(T-13) MS - Corinth</option>
+                            <option value="67">(T-14) MS - Hernando</option>
+                            <option value="63">(T-15) TN - Memphis</option>
+                            <option value="109">(T-16) TN - Finger</option>
+                            <option value="82">(V-01) TN - Rogersville</option>
+                            <option value="43">(V-02) TN - Kingsport</option>
+                            <option value="55">(V-03) VA - Christiansburg</option>
+                            <option value="71">(V-04) VA - Roanoke</option>
+                            <option value="34">(V-05) VA - Appomattox</option>
+                            <option value="44">(V-06) VA - Lynchburg</option>
+                            <option value="45">(V-07) VA - Amherst</option>
+                            <option value="187">(V-08) VA - Palmyra</option>
+                            <option value="286">(V-09) VA - Madison</option>
+                            <option value="21">(V-10) VA - Fredericksburg</option>
+                            <option value="25">(VB-01) TN - Dandridge</option>
+                            <option value="31">(VB-02) TN - Limestone</option>
+                            <option value="77">(VB-03) TN - Greeneville</option>
+                            <option value="108">(VB-04) TN - Powell</option>
+                            <option value="220">(Z-13) NC - Deep Gap</option>
+                        </select>
+                        <button type="submit" class="create_account">
+                            <h3>Create Account</h3>
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <section id="coop_card" class="coop_explain">
+                <div class="coop_explain_card">
+                    <div class="coop_explain_card_top">
+                        <svg id="coop_card_close" class="coop_explain_x" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30"
+                            height="30" viewBox="0 0 48 48">
+                            <path
+                                d="M 38.982422 6.9707031 A 2.0002 2.0002 0 0 0 37.585938 7.5859375 L 24 21.171875 L 10.414062 7.5859375 A 2.0002 2.0002 0 0 0 8.9785156 6.9804688 A 2.0002 2.0002 0 0 0 7.5859375 10.414062 L 21.171875 24 L 7.5859375 37.585938 A 2.0002 2.0002 0 1 0 10.414062 40.414062 L 24 26.828125 L 37.585938 40.414062 A 2.0002 2.0002 0 1 0 40.414062 37.585938 L 26.828125 24 L 40.414062 10.414062 A 2.0002 2.0002 0 0 0 38.982422 6.9707031 z">
+                            </path>
+                        </svg>
+                        <h2>What is a Co-op?</h2>
+                    </div>
+                    <p>
+                        Placing an order with Naturally A Deal doesn't work like other vendors; we do not do delivery.
+                        Instead, we deliver to specific partner locations, called Co-ops, where you also go to pick up
+                        your
+                        order. For more information on how you get your order, <a class="coop_explain_link"
+                            href="https://naturallyadeal.com/how-it-works/">click here</a>.
+                    </p>
+                </div>
+            </section>
         </main>
 
         <footer class="wrapper">
@@ -134,5 +272,7 @@
 
     </div>
     <script src="scripts.js"></script>
+    <script src="assets/js/signup.js"></script>
 </body>
+
 </html>
