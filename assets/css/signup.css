@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url('../../images/vendor-banner-picture.webp');
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -7,12 +7,17 @@ body{
     background-attachment: fixed;
 }
 
-.signup{
+.create_your_account_text {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.signup {
     background-color: var(--cream);
     max-width: 700px;
     margin: auto;
     border-radius: 20px;
-    margin-top: 125px;
     margin-bottom: 50px;
     filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
 
@@ -23,7 +28,7 @@ body{
     padding-block: 20px;
 }
 
-.internal_content{
+.internal_content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,39 +36,42 @@ body{
     gap: 8px;
 }
 
-.logo{
+.logo {
     width: 200px;
 }
 
-h1{
+h1 {
     font-weight: bold;
 }
 
-h2{
+h2 {
     font-style: italic;
     font-weight: lighter;
     color: black;
     font-size: 18px;
 }
 
-h2 a, .coop_explain_link{
-    color: var(--z);
+h2 a,
+.coop_explain_link {
+    color: var(--green);
     font-weight: bold;
 }
 
-label{
+label {
     display: block;
 }
 
-form{
+form {
     width: 100%;
 }
 
-label{
+label {
     margin-top: 10px;
 }
 
-input, select, .create_account{
+input,
+select,
+.create_account {
     width: 100%;
     height: 40px;
     padding: 10px;
@@ -74,16 +82,17 @@ input, select, .create_account{
     transition: border 0.2s ease-in-out
 }
 
-input:focus, select:focus{
+input:focus,
+select:focus {
     border-color: var(--green);
     outline: none;
 }
 
-select{
+select {
     cursor: pointer;
 }
 
-.create_account{
+.create_account {
     border: none;
     background-color: var(--green);
     margin-top: 22px;
@@ -97,29 +106,29 @@ select{
     transition: background-color 0.2s ease-in-out
 }
 
-.create_account:hover{
+.create_account:hover {
     background-color: var(--dark-green);
 }
 
-.password_strength{
+.password_strength {
     font-weight: lighter;
     font-style: italic;
     font-size: 14;
     color: darkslategray;
 }
 
-.info_icon{
+.info_icon {
     width: 20px;
     height: 20px;
     stroke: var(--green);
     margin-block: -5px;
 }
 
-.co_op_label{
+.co_op_label {
     cursor: pointer;
 }
 
-.coop_explain_card{
+.coop_explain_card {
     background-color: var(--cream);
     max-width: 500px;
     margin: auto;
@@ -135,7 +144,7 @@ select{
     border: 2px solid var(--green);
 }
 
-.coop_explain_card_top{
+.coop_explain_card_top {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -150,12 +159,12 @@ select{
     font-size: 20px;
 }
 
-.coop_explain_x{
+.coop_explain_x {
     fill: var(--green);
     cursor: pointer;
 }
 
-#co_op{
+#co_op {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='none' stroke='%23333333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m6 9 6 6 6-6'/></svg>");
     background-repeat: no-repeat;
     background-position: right 12px center;
@@ -166,13 +175,16 @@ select{
     appearance: none;
 }
 
-@media(max-width:1000px){
-    body{
+@media(max-width:1100px) {
+    body {
         background-image: var(--cream);
     }
 
-    .signup{
+    .signup {
         filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
     }
-}
 
+    .create_your_account_text {
+        font-size: 1.8rem;
+    }
+}

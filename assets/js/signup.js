@@ -37,13 +37,5 @@ document.addEventListener('click', (e) => {
         !card_trigger.contains(e.target)
     ) {
         hide_card();
-        console.log('hid card');
     }
-
 });
-
-// document.addEventListener('click', (e) => {
-//     console.log('Event:', e.timeStamp);
-//     console.log('Target:', e.target);
-//     console.log('Inside:', card_trigger.contains(e.target));
-// }, true);
