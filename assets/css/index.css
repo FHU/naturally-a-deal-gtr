@@ -1,3 +1,9 @@
+/* --------------- SETUP --------------- */
+
+body {
+    top: 142px;
+}
+
 /* --------------- CATEGORIES --------------- */
 
 .categories {
@@ -177,7 +183,7 @@
     gap: 8px;
 }
 
-.details h3 {
+.details h4 {
     font-size: 12px;
     color: var(--light-gray);
     font-weight: 600;
@@ -263,6 +269,10 @@
 /* --------------- MEDIA QUERIES --------------- */
 
 @media (width < 1340px) {
+    body {
+        top: 90px;
+    }
+
     .categories {
         display: none;
     }
