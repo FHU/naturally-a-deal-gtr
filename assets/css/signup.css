@@ -134,6 +134,10 @@ select {
     cursor: pointer;
 }
 
+#coop_card{
+    visibility: hidden;
+}
+
 .coop_explain_card {
     background-color: var(--cream);
     max-width: 600px;
@@ -149,7 +153,6 @@ select {
     left: 50%;
     transform: translate(-50%, -50%);
     border-block: 5px solid var(--green);
-    visibility: hidden;
 
     & p {
         margin-bottom: 10px;
