@@ -4,7 +4,6 @@ const card_close_x = document.getElementById('coop_card_close')
 
 let card_visible = false;
 card.style.visibility = 'hidden';
-console.log("successful yay :)")
 
 function show_card() {
     card.style.visibility = 'visible';
