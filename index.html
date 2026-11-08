@@ -134,40 +134,46 @@
                         Featured Products
                     </button></li>
                     <li><button>
-                        Food & Pantry
-                        <svg>
+                        Grocery
+                        <!-- <svg>
                             <path d="m6 9 6 6 6-6"/>
-                        </svg>
+                        </svg> -->
                     </button></li>
                     <li><button>
-                        Baking & Kitchen
-                        <svg>
+                        Kitchen
+                        <!-- <svg>
                             <path d="m6 9 6 6 6-6"/>
-                        </svg>
+                        </svg> -->
                     </button></li>
                     <li><button>
-                        Home & Personal Care
-                        <svg>
+                        Household
+                        <!-- <svg>
                             <path d="m6 9 6 6 6-6"/>
-                        </svg>
+                        </svg> -->
+                    </button></li>
+                    <li><button>
+                        Pet Supplies
+                        <!-- <svg>
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg> -->
                     </button></li>
                     <li><button>
                         Garden & Farm
-                        <svg>
+                        <!-- <svg>
                             <path d="m6 9 6 6 6-6"/>
-                        </svg>
+                        </svg> -->
                     </button></li>
-                    <li><button id="books-btn">
+                    <li><button>
                         Books
-                        <svg>
+                        <!-- <svg>
                             <path d="m6 9 6 6 6-6"/>
-                        </svg>
+                        </svg> -->
                     </button></li>
                     <li><button>
                         Deals & Clearance
-                        <svg>
+                        <!-- <svg>
                             <path d="m6 9 6 6 6-6"/>
-                        </svg>
+                        </svg> -->
                     </button></li>
                 </ul>
             </div>
@@ -192,167 +198,50 @@
             </div>
 
             <section>
-                <ul class="grid">
+                <ul class="grid" id="product-grid">
+                </ul>
+                
+                <template id="card-template">
                     <li class="card">
                         <div class="card-top">
-                            <img src="images/products/cinnamon-toast-crunch-pb.jpg" loading="lazy" alt="">
+                            <img class="product-image" src="" loading="lazy" alt="">
 
-                            <span class="product-type">D</span>
+                            <span class="product-storage-type"></span>
                         </div>
                         
                         <div class="card-middle">
-                            <h2>Nature’s Path Organic Mesa Sunrise Cereal (Gluten Free)</h2>
+                            <h2 class="product-name"></h2>
 
                             <ul class="details">
                                 <li>
                                     <h4>Quantity</h4>
-                                    <p>12</p>
+                                    <p class="product-quantity"></p>
                                 </li>
                                 <li>
                                     <h4>Weight</h4>
-                                    <p>10.6oz</p>
+                                    <p class="product-weight"></p>
                                 </li>
                                 <li>
-                                    <h4>Best By</h4>
-                                    <p>11/16/26</p>
+                                    <h4 class="product-condition-type">Best By</h4>
+                                    <p class="product-condition"></p>
                                 </li>
                             </ul>
                         </div>
 
                         <div class="card-bottom">
                             <div class="card-bottom-left">
-                                <p class="price">$38.<span>12</span></p>
-                                <p class="unit-price">$3.17 each</p>
+                                <p class="product-price"></p>
+                                <p class="product-unit-price"></p>
                             </div>
 
-                            <div class="quantity">
-                                <button aria-label="Decrease quantity">−</button>
-                                <span>0</span>
-                                <button aria-label="Increase quantity">+</button>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="card">
-                        <div class="card-top">
-                            <img src="" loading="lazy" alt="">
-                            
-                            <span class="product-type"></span>
-                        </div>
-                        
-                        <div class="card-middle">
-                            <h2></h2>
-
-                            <ul class="details">
-                                <li>
-                                    <h4></h4>
-                                    <p></p>
-                                </li>
-                                <li>
-                                    <h4></h4>
-                                    <p></p>
-                                </li>
-                                <li>
-                                    <h4></h4>
-                                    <p></p>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="card-bottom">
-                            <div class="card-bottom-left">
-                                <p class="price"></p>
-                                <p class="unit-price"></p>
-                            </div>
-
-                            <div class="quantity">
-                                <button aria-label="Decrease quantity">−</button>
-                                <span>0</span>
-                                <button aria-label="Increase quantity">+</button>
+                            <div class="quantity-buttons">
+                                <button class="decrease-quantity" aria-label="Decrease quantity">−</button>
+                                <span class="quantity-value">0</span>
+                                <button class="increase-quantity" aria-label="Increase quantity">+</button>
                             </div>
                         </div>
                     </li>
-
-                    <li class="card">
-                        <div class="card-top">
-                            <img src="" loading="lazy" alt="">
-                            
-                            <span class="product-type"></span>
-                        </div>
-                        
-                        <div class="card-middle">
-                            <h2></h2>
-
-                            <ul class="details">
-                                <li>
-                                    <h4></h4>
-                                    <p></p>
-                                </li>
-                                <li>
-                                    <h4></h4>
-                                    <p></p>
-                                </li>
-                                <li>
-                                    <h4></h4>
-                                    <p></p>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="card-bottom">
-                            <div class="card-bottom-left">
-                                <p class="price"></p>
-                                <p class="unit-price"></p>
-                            </div>
-
-                            <div class="quantity">
-                                <button aria-label="Decrease quantity">−</button>
-                                <span>0</span>
-                                <button aria-label="Increase quantity">+</button>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="card">
-                        <div class="card-top">
-                            <img src="" loading="lazy" alt="">
-                            
-                            <span class="product-type"></span>
-                        </div>
-                        
-                        <div class="card-middle">
-                            <h2></h2>
-
-                            <ul class="details">
-                                <li>
-                                    <h4></h4>
-                                    <p></p>
-                                </li>
-                                <li>
-                                    <h4></h4>
-                                    <p></p>
-                                </li>
-                                <li>
-                                    <h4></h4>
-                                    <p></p>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="card-bottom">
-                            <div class="card-bottom-left">
-                                <p class="price"></p>
-                                <p class="unit-price"></p>
-                            </div>
-
-                            <div class="quantity">
-                                <button aria-label="Decrease quantity">−</button>
-                                <span>0</span>
-                                <button aria-label="Increase quantity">+</button>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                </template>
             </section>
         </main>
 
@@ -405,6 +294,8 @@
         </footer>
 
     </div>
+    <script src="assets/js/products-list.js"></script>
+    <script src="assets/js/index.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

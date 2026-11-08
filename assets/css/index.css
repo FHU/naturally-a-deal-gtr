@@ -133,7 +133,7 @@ body {
 
 .card-top {
     position: relative;
-    padding: 15px;
+    padding: 15px 20px 15px 20px;
 }
 
 .card-top > img {
@@ -144,7 +144,7 @@ body {
     border: 1px solid white;
 }
 
-.product-type {
+.product-storage-type {
     position: absolute;
     top: 12px;
     right: 12px;
@@ -165,7 +165,7 @@ body {
 .card-middle {
     display: flex;
     flex-direction: column;
-    padding: 0 15px 15px 15px;
+    padding: 0 20px 15px 20px;
     height: 124px;
     gap: 15px;
 }
@@ -175,6 +175,7 @@ body {
     line-height: 1.5;
     color: var(--dark-gray);
     font-weight: 700;
+    height: 48px;
 }
 
 .card-middle .details {
@@ -201,7 +202,7 @@ body {
 
 .card-bottom {
     background-color: var(--green);
-    padding: 0 15px;
+    padding: 0 20px 0px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -213,24 +214,24 @@ body {
     color: var(--cream);
 }
 
-.price {
+.product-price {
     font-size: 28px;
     font-weight: 700;
     color: var(--yellow);
 }
 
-.price span {
+.product-price span {
     font-size: 18px;
 }
 
-.unit-price {
+.product-unit-price {
     font-size: 14px;
     font-style: italic;
 }
 
 /* --------------- QUANTITY BUTTONS --------------- */
 
-.quantity {
+.quantity-buttons {
     display: flex;
     height: 44px;
     border-radius: 12px;
@@ -239,7 +240,7 @@ body {
     flex-shrink: 0;
 }
 
-.quantity button {
+.quantity-buttons button {
     height: 44px;
     padding: 1rem;
     border-radius: 0;
@@ -249,11 +250,11 @@ body {
     transition: .4s;
 }
 
-.quantity button:hover {
+.quantity-buttons button:hover {
     background-color: var(--yellow);
 }
 
-.quantity span {
+.quantity-buttons span {
     width: 44px;
     height: 44px;
     display: flex;
@@ -269,17 +270,17 @@ body {
 /* --------------- MEDIA QUERIES --------------- */
 
 @media (width < 1340px) {
-    body {
+    /* body {
         top: 90px;
-    }
+    } */
 
-    .categories {
+    /* .categories {
         display: none;
     }
      
     #categories-menu-svg {
         display: block;
-    }
+    } */
 
     .grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -291,11 +292,11 @@ body {
 }
 
 @media (width < 1080px) {     
-    #categories-menu-svg {
+    /* #categories-menu-svg {
         top: -5px;
         width: 50px;
         height: 50px;
-    }
+    } */
 }
 
 @media (width < 900px) {
