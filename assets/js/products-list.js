@@ -47,16 +47,4 @@ const products_list = [
         unit_price: "$3.17 ea.",
         category: "Baking Items - Ingredients"
     },
-    {
-        image: "https://s3.amazonaws.com/denverfoods/HQP1872-01.jpg",
-        storage_type: "D",
-        name: "~ Food Storage Containers & Lids - 1.5 Qt - BPA Free, Freezer Safe - Made in OH",
-        quantity: 5,
-        weight: "",
-        condition_type: "",
-        condition: "",
-        price: "$12.81",
-        unit_price: "$2.56 ea.",
-        category: "Featured Products | Canning & Storage"
-    },
 ]
