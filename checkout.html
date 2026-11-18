@@ -144,11 +144,160 @@
         <div id="overlay"></div>
 
         <main class="wrapper">
-            <section id="top_row">
-                <button></button>
+
+            <h3 class="cart_title">Your Cart:</h3>
+
+            <ul id="cart_row">
+
+                <li class="card">
+                    <div class="card-top">
+                        <span class="product-type">D</span>
+                        <img src="https://s3.amazonaws.com/denverfoods/F191173.jpg" loading="lazy" alt="A.... thing?">
+                        <button type="button" class="delete-btn" aria-label="Delete item">
+                            <img src="images/delete.png" alt="">
+                        </button>
+                    </div>
+
+                    <div class="card-middle">
+                        <h2>A.... thing?</h2>
+                    </div>
+
+                    <div class="card-bottom">
+                        <div class="card-bottom-left">
+                            <p class="price">$20.<span>34</span></p>
+                            <p class="unit-price">$5.04 each</p>
+                        </div>
+
+                        <div class="quantity">
+                            <button type="button" aria-label="Decrease quantity">−</button>
+                            <span>4</span>
+                            <button type="button" aria-label="Increase quantity">+</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <div class="card-top">
+                        <span class="product-type">D</span>
+                        <img src="https://s3.amazonaws.com/denverfoods/5204180.jpg" loading="lazy" alt="Cheesecake">
+                        <button type="button" class="delete-btn" aria-label="Delete item">
+                            <img src="images/delete.png" alt="">
+                        </button>
+                    </div>
+
+                    <div class="card-middle">
+                        <h2>Cheesecake</h2>
+                    </div>
+
+                    <div class="card-bottom">
+                        <div class="card-bottom-left">
+                            <p class="price">$9.<span>46</span></p>
+                            <p class="unit-price">$3.12 each</p>
+                        </div>
+
+                        <div class="quantity">
+                            <button type="button" aria-label="Decrease quantity">−</button>
+                            <span>3</span>
+                            <button type="button" aria-label="Increase quantity">+</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <div class="card-top">
+                        <span class="product-type">D</span>
+                        <img src="https://s3.amazonaws.com/denverfoods/024663.jpg" loading="lazy"
+                            alt="Peet's Dark Roast Coffee">
+                        <button type="button" class="delete-btn" aria-label="Delete item">
+                            <img src="images/delete.png" alt="">
+                        </button>
+                    </div>
+
+                    <div class="card-middle">
+                        <h2>Peet's Dark Roast Coffee</h2>
+                    </div>
+
+                    <div class="card-bottom">
+                        <div class="card-bottom-left">
+                            <p class="price">$38.<span>12</span></p>
+                            <p class="unit-price">$3.17 each</p>
+                        </div>
+
+                        <div class="quantity">
+                            <button type="button" aria-label="Decrease quantity">−</button>
+                            <span>12</span>
+                            <button type="button" aria-label="Increase quantity">+</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <div class="card-top">
+                        <span class="product-type">D</span>
+                        <img src="https://s3.amazonaws.com/denverfoods/DV396212.jpg" loading="lazy"
+                            alt="Roseband Flour">
+                        <button type="button" class="delete-btn" aria-label="Delete item">
+                            <img src="images/delete.png" alt="">
+                        </button>
+                    </div>
+
+                    <div class="card-middle">
+                        <h2>Roseband Flour</h2>
+                    </div>
+
+                    <div class="card-bottom">
+                        <div class="card-bottom-left">
+                            <p class="price">$43.<span>74</span></p>
+                            <p class="unit-price">$8.05 each</p>
+                        </div>
+
+                        <div class="quantity">
+                            <button type="button" aria-label="Decrease quantity">−</button>
+                            <span>16</span>
+                            <button type="button" aria-label="Increase quantity">+</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <div class="card-top">
+                        <span class="product-type">D</span>
+                        <img src="https://s3.amazonaws.com/denverfoods/3000157.jpg" loading="lazy"
+                            alt="Mama B's Buttermilk Biscuits">
+                        <button type="button" class="delete-btn" aria-label="Delete item">
+                            <img src="images/delete.png" alt="">
+                        </button>
+                    </div>
+
+                    <div class="card-middle">
+                        <h2>Mama B's Buttermilk Biscuts</h2>
+                    </div>
+
+                    <div class="card-bottom">
+                        <div class="card-bottom-left">
+                            <p class="price">$19.<span>60</span></p>
+                            <p class="unit-price">$19.60 each</p>
+                        </div>
+
+                        <div class="quantity">
+                            <button type="button" aria-label="Decrease quantity">−</button>
+                            <span>1</span>
+                            <button type="button" aria-label="Increase quantity">+</button>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+            <hr id="horz_line">
+            <hr id="horz_line">
+
+            <section id="bottom_row">
+                <div></div>
                 <h2>Other Great Deals:</h2>
             </section>
-            <section id="top_columns">
+
+            <section id="bottom_columns">
                 <section id="total_box">
                     <h2 id="total_h2">Order Summary:</h2>
                     <div id="inside_order_box">
@@ -192,10 +341,8 @@
                                     <p class="unit-price">$5.00 each</p>
                                 </div>
 
-                                <div class="quantity">
-                                    <button aria-label="Decrease quantity">−</button>
-                                    <span>0</span>
-                                    <button aria-label="Increase quantity">+</button>
+                                <div id="add_to_cart_button">
+                                    <button aria-label="Add to cart">Add to cart</button>
                                 </div>
                             </div>
                         </li>
@@ -232,10 +379,8 @@
                                     <p class="unit-price">$3.17 each</p>
                                 </div>
 
-                                <div class="quantity">
-                                    <button aria-label="Decrease quantity">−</button>
-                                    <span>0</span>
-                                    <button aria-label="Increase quantity">+</button>
+                                <div id="add_to_cart_button">
+                                    <button aria-label="Add to cart">Add to cart</button>
                                 </div>
                             </div>
                         </li>
@@ -272,204 +417,17 @@
                                     <p class="unit-price">$6.07 each</p>
                                 </div>
 
-                                <div class="quantity">
-                                    <button aria-label="Decrease quantity">−</button>
-                                    <span>0</span>
-                                    <button aria-label="Increase quantity">+</button>
+                                <div id="add_to_cart_button">
+                                    <button aria-label="Add to cart">Add to cart</button>
                                 </div>
                             </div>
                         </li>
+                        
                 </section>
 
                 <button type="button" id="payment_button">Continue to Payment</button>
-            </section>
-
-            <hr id="horz_line">
-            <hr id="horz_line">
-
-            <h3 class="cart_title">Your Cart:</h3>
-
-            <section id="cart_row">
-                <section id="cart_cards">
-                    <div class="card-top">
-                        <span class="product-type">D</span>
-                        <img src="https://s3.amazonaws.com/denverfoods/F191173.jpg" id="mesa_C" alt="mesa_C">
-                        <button type="button" class="delete-btn">
-                            <img src="images/delete.png" alt="delete">
-                        </button>
-                    </div>
-                    <div id="middle_of_card">
-                        <p id="product_name">A.... thing?</p>
-                        <div id="price_row">
-                            <div class="price_col">
-                                <p class="price_label">Total</p>
-                                <p id="total_price">$20.34</p>
-                            </div>
-                            <div class="price_col">
-                                <p class="price_label">Price</p>
-                                <p id="unit_price">$5.04 each</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="bottom_of_card">
-                        <button type="button" class="qty_btn">
-                            <img src="images/subtract_circle.png">
-                        </button>
-                        <div>
-                            <p>Quantity</p>
-                            <p>4</p>
-                        </div>
-                        <button type="button" class="qty_btn">
-                            <img src="images/add_circle.png">
-                        </button>
-                    </div>
-                </section>
-
-
-                <section id="cart_cards">
-                    <div class="card-top">
-                        <span class="product-type">D</span>
-                        <img src="https://s3.amazonaws.com/denverfoods/5204180.jpg" id="mesa_C" alt="mesa_C">
-                        <button type="button" class="delete-btn">
-                            <img src="images/delete.png" alt="delete">
-                        </button>
-                    </div>
-                    <div id="middle_of_card">
-                        <p id="product_name">Cheesecake</p>
-                        <div id="price_row">
-                            <div class="price_col">
-                                <p class="price_label">Total</p>
-                                <p id="total_price">$9.46</p>
-                            </div>
-                            <div class="price_col">
-                                <p class="price_label">Price</p>
-                                <p id="unit_price">$3.12 each</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="bottom_of_card">
-                        <button type="button" class="qty_btn">
-                            <img src="images/subtract_circle.png">
-                        </button>
-                        <div>
-                            <p>Quantity</p>
-                            <p>3</p>
-                        </div>
-                        <button type="button" class="qty_btn">
-                            <img src="images/add_circle.png">
-                        </button>
-                    </div>
-                </section>
-
-
-                <section id="cart_cards">
-                    <div class="card-top">
-                        <span class="product-type">D</span>
-                        <img src="https://s3.amazonaws.com/denverfoods/024663.jpg" id="mesa_C" alt="mesa_C">
-                        <button type="button" class="delete-btn">
-                            <img src="images/delete.png" alt="delete">
-                        </button>
-                    </div>
-                    <div id="middle_of_card">
-                        <p id="product_name">Peet's Dark Roast Coffee</p>
-                        <div id="price_row">
-                            <div class="price_col">
-                                <p class="price_label">Total</p>
-                                <p id="total_price">$38.12</p>
-                            </div>
-                            <div class="price_col">
-                                <p class="price_label">Price</p>
-                                <p id="unit_price">$3.17 each</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="bottom_of_card">
-                        <button type="button" class="qty_btn">
-                            <img src="images/subtract_circle.png">
-                        </button>
-                        <div>
-                            <p>Quantity</p>
-                            <p>12</p>
-                        </div>
-                        <button type="button" class="qty_btn">
-                            <img src="images/add_circle.png">
-                        </button>
-                    </div>
-                </section>
-
-                <section id="cart_cards">
-                    <div class="card-top">
-                        <span class="product-type">D</span>
-                        <img src="https://s3.amazonaws.com/denverfoods/DV396212.jpg" id="mesa_C" alt="mesa_C">
-                        <button type="button" class="delete-btn">
-                            <img src="images/delete.png" alt="delete">
-                        </button>
-                    </div>
-                    <div id="middle_of_card">
-                        <p id="product_name">Roseband Flour</p>
-                        <div id="price_row">
-                            <div class="price_col">
-                                <p class="price_label">Total</p>
-                                <p id="total_price">$43.74</p>
-                            </div>
-                            <div class="price_col">
-                                <p class="price_label">Price</p>
-                                <p id="unit_price">$8.05 each</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="bottom_of_card">
-                        <button type="button" class="qty_btn">
-                            <img src="images/subtract_circle.png">
-                        </button>
-                        <div>
-                            <p>Quantity</p>
-                            <p>16</p>
-                        </div>
-                        <button type="button" class="qty_btn">
-                            <img src="images/add_circle.png">
-                        </button>
-                    </div>
-                </section>
-
-
-                <section id="cart_cards">
-                    <div class="card-top">
-                        <span class="product-type">D</span>
-                        <img src="https://s3.amazonaws.com/denverfoods/3000157.jpg" id="mesa_C" alt="mesa_C">
-                        <button type="button" class="delete-btn">
-                            <img src="images/delete.png" alt="delete">
-                        </button>
-                    </div>
-                    <div id="middle_of_card">
-                        <p id="product_name">Mama B's Buttermilk Biscuts</p>
-                        <div id="price_row">
-                            <div class="price_col">
-                                <p class="price_label">Total</p>
-                                <p id="total_price">$19.60</p>
-                            </div>
-                            <div class="price_col">
-                                <p class="price_label">Price</p>
-                                <p id="unit_price">$19.60</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="bottom_of_card">
-                        <button type="button" class="qty_btn">
-                            <img src="images/subtract_circle.png">
-                        </button>
-                        <div>
-                            <p>Quantity</p>
-                            <p>1</p>
-                        </div>
-                        <button type="button" class="qty_btn">
-                            <img src="images/add_circle.png">
-                        </button>
-                    </div>
-                </section>
 
             </section>
-
         </main>
 
         <footer>
