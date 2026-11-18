@@ -132,8 +132,18 @@ body {
 /* --------------- CARD TOP --------------- */
 
 .card-top {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     position: relative;
-    padding: 15px 20px 15px 20px;
+    padding: 20px 20px 10px 20px;
+}
+
+.card-top .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
 }
 
 .card-top > img {
@@ -144,20 +154,18 @@ body {
     border: 1px solid white;
 }
 
-.product-storage-type {
+.date {
     position: absolute;
-    top: 12px;
-    right: 12px;
-    height: 32px;
-    width: 32px;
-    border: 3px solid var(--dark-gray);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
+    top: 15px;
+    left: 15px;
+    background-color: var(--yellow);
+    /* border: 3px solid var(--dark-gray); */
+    border-radius: 12px;
     align-items: center;
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--dark-gray);
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--green);
 }
 
 /* --------------- CARD MIDDLE --------------- */
@@ -165,49 +173,39 @@ body {
 .card-middle {
     display: flex;
     flex-direction: column;
-    padding: 0 20px 15px 20px;
-    height: 124px;
-    gap: 15px;
+    padding: 0 20px;
+    height: 148px;
+    gap: 7px;
 }
 
 .card-middle h2 {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 14px;
+    /* line-height: 1.5; */
     color: var(--dark-gray);
-    font-weight: 700;
-    height: 48px;
+    font-weight: 500;
 }
 
 .card-middle .details {
     display: flex;
-    justify-content: space-between;
-    gap: 8px;
-}
-
-.details h4 {
+    gap: 7px;
     font-size: 12px;
-    color: var(--light-gray);
-    font-weight: 600;
-    padding-bottom: 3px;
 }
 
-.details p {
-    font-size: 18px;
-    color: var(--dark-gray);
-    font-weight: 700;
-    white-space: nowrap;
+.quantity, .product-storage-type {
+    display: flex;
+    align-items: center;
 }
 
 /* --------------- CARD BOTTOM --------------- */
 
 .card-bottom {
-    background-color: var(--green);
-    padding: 0 20px 0px 20px;
-    display: flex;
+    /* background-color: var(--green); */
+    /* padding: 0 20px 0px 20px; */
+    /* display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 8px;
-    height: 80px;
+    gap: 8px; */
+    height: 60px;
 }
 
 .card-bottom-left {
@@ -215,13 +213,9 @@ body {
 }
 
 .product-price {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
-    color: var(--yellow);
-}
-
-.product-price span {
-    font-size: 18px;
+    color: var(--green);
 }
 
 .product-unit-price {
@@ -229,29 +223,40 @@ body {
     font-style: italic;
 }
 
-/* --------------- QUANTITY BUTTONS --------------- */
+/* --------------- ADD TO CART AND QUANTITY BUTTONS --------------- */
 
-.quantity-buttons {
+.add-to-cart-button, .quantity-buttons {
     display: flex;
-    height: 44px;
-    border-radius: 12px;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
-    background-color: var(--cream);
+    background-color: var(--green);
     flex-shrink: 0;
 }
 
-.quantity-buttons button {
+.add-to-cart-button button, .quantity-buttons button {
     height: 44px;
     padding: 1rem;
-    border-radius: 0;
-    font-size: 26px;
-    color: var(--green);
-    background-color: var(--cream);
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--yellow);
+    background-color: var(--green);
     transition: .4s;
 }
 
+.quantity-buttons button {
+    font-size: 26px;
+}
+
+.add-to-cart-button span {
+    font-size: 26px;
+}
+
 .quantity-buttons button:hover {
-    background-color: var(--yellow);
+    background-color: var(--dark-green);
 }
 
 .quantity-buttons span {
@@ -260,57 +265,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 2px solid var(--green);
-    border-right: 2px solid var(--green);
+    /* border-left: 2px solid var(--yellow);
+    border-right: 2px solid var(--yellow); */
     font-size: 18px;
     font-weight: 700;
-    color: var(--green);
+    color: var(--yellow);
 }
 
 /* --------------- MEDIA QUERIES --------------- */
 
-@media (width < 1340px) {
-    /* body {
-        top: 90px;
-    } */
-
-    /* .categories {
-        display: none;
-    }
-     
-    #categories-menu-svg {
-        display: block;
-    } */
-
+@media (width < 1080px) {
     .grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
-
-    .card {
-        width: 100%;
-    }
 }
 
-@media (width < 1080px) {     
-    /* #categories-menu-svg {
-        top: -5px;
-        width: 50px;
-        height: 50px;
-    } */
-}
-
-@media (width < 900px) {
+@media (width < 760px) {
     .grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-@media (width < 670px) {
+@media (width < 400px) {
     .grid {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
-}
-
-@media (width < 400px) {
-
 }
