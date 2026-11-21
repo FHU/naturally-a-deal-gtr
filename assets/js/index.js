@@ -1,3 +1,11 @@
+const API_URL = "assets/js/products-list.json";
+
+async function fetchProducts() {
+    const response = await fetch(API_URL)
+    const products = await response.json();
+    return products;
+}
+
 function renderProducts(products) {
     const grid = document.getElementById("product-grid")
     const template = document.getElementById("card-template")
@@ -7,8 +15,7 @@ function renderProducts(products) {
     for(const product of products) {
         const card = template.content.cloneNode(true)
         const details = card.querySelector(".details")
-        const details_div_first = details.children[1]
-        const details_div_second = details.children[3]
+        const details_div = details.children[1]
 
         const image = card.querySelector(".product-image")
         image.src = product.image_url
@@ -18,7 +25,6 @@ function renderProducts(products) {
             card.querySelector(".product-storage-type").textContent = product.storage_type
         } else {
             card.querySelector(".product-storage-type").style.display = "none"
-            details_div_first.style.display = "none"
         }
 
         card.querySelector(".product-name").textContent = product.name        
@@ -28,7 +34,7 @@ function renderProducts(products) {
             card.querySelector(".product-weight").textContent = product.weight
         } else {
             card.querySelector(".product-weight").style.display = "none"
-            details_div_second.style.display = "none"
+            details_div.style.display = "none"
         }
 
         if (product.date_type !== "") {
@@ -89,6 +95,15 @@ function renderProducts(products) {
     }
 }
 
+async function loadProducts() {
+    try {
+        const products = await fetchProducts();
+        renderProducts(products)
+    } catch (error) {
+        console.error("Error loading products:", error)
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-    renderProducts(products_list);
+    loadProducts();
 });

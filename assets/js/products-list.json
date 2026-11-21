@@ -1,0 +1,75 @@
+[
+    {
+        "name": "Ben & Jerry's F Sugar Cookie Dough Bites",
+        "categories": "Bakery",
+        "price": "$15.25",
+        "quantity": 8,
+        "weight": "8 oz.",
+        "date_type": "Best By",
+        "date": "09/06/26",
+        "unit_price": "$1.90 ea.",
+        "storage_type": "F",
+        "image_url": "https://s3.amazonaws.com/denverfoods/40003143.jpg"
+    },
+    {
+        "name": "~ Black Beauty",
+        "categories": "Books - Children & Youth",
+        "price": "$17.06",
+        "quantity": 1,
+        "weight": "",
+        "date_type": "",
+        "date": "",
+        "unit_price": "$17.06 ea.",
+        "storage_type": "",
+        "image_url": "https://s3.amazonaws.com/denverfoods/CL0430.jpg"
+    },
+    {
+        "name": "~ Arm and Hammer Baking Soda, 4 lb Box",
+        "categories": "Baking & Cooking",
+        "price": "$7.73",
+        "quantity": 1,
+        "weight": "50 lbs.",
+        "date_type": "",
+        "date": "",
+        "unit_price": "$7.73 ea.",
+        "storage_type": "D",
+        "image_url": "https://s3.amazonaws.com/denverfoods/2000-7888233.jpg"
+    },
+    {
+        "name": "Nestle Toll House Morsels (Hot Cocoa & Marshmallow)",
+        "categories": "Baking Items - Ingredients",
+        "price": "$76.23",
+        "date_type": "Best By",
+        "date": "10/1/26",
+        "unit_price": "$3.17 ea.",
+        "quantity": 24,
+        "weight": "9 oz.",
+        "storage_type": "D",
+        "image_url": "https://s3.amazonaws.com/denverfoods/138745.jpg"
+    },
+    {
+        "name": "Chef Pierre French Silk Pie (Pre-Sliced 8-Pieces)",
+        "categories": "Bakery",
+        "price": "$20.33",
+        "date_type": "",
+        "date": "",
+        "unit_price": "$5.08 ea.",
+        "quantity": 4,
+        "weight": "40 oz.",
+        "storage_type": "F",
+        "image_url": "https://s3.amazonaws.com/denverfoods/0071628.jpg"
+    },
+    {
+        "name": "Snack'N Waffles Wild Blueberry Bulk",
+        "categories": "Waffles, Pancakes & French Toast",
+        "price": "$43.56",
+        "date_type": "Best By",
+        "date": "02/04/27",
+        "unit_price": "$0.45 ea.",
+        "package_size": "96/2.4oz.",
+        "quantity": 96,
+        "weight": "2.4 oz.",
+        "storage_type": "F",
+        "image_url": "https://s3.amazonaws.com/denverfoods/63000050.jpg"
+    }
+]
